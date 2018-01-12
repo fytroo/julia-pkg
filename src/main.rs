@@ -2,7 +2,7 @@
 extern crate clap;
 
 
-fn vals_to_cmds(submatch: &clap::ArgMatches, cmd: &str, arg: &str) -> String {
+fn vals_to_cmds(submatch: &clap::ArgMatches, arg: &str, cmd: &str) -> String {
     // Raw values from the list
     let values: Vec<&str> = submatch.values_of(arg)
                                     .unwrap()
