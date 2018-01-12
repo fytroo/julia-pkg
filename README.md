@@ -4,12 +4,21 @@ A command line interface to Julia's package manager functions.
 Note that Julia must be available in your path; that is, it must be callable from the
 command line as `julia`.
 
+## Requirement
+- rustc 1.25.0-nightly
+
 ## Installation
 
-Run `make install` in the project's directory.
-By default the executable is installed into /usr/local/bin.
-A separate prefix can be specified as `make install prefix=/cool/path`, which installs
-the executable to /cool/path/bin.
+There is no rust environment, execute this.
+```
+./install_rust.sh
+```
+
+Run this to install julia-pkg
+```
+./install.sh --prefix %HOME/.local
+```
+
 
 ## Commands
 
